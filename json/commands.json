@@ -1,0 +1,86 @@
+{
+    "ban": {
+        "name": "ban",
+        "permissions": "`BAN_MEMBERS`",
+        "desc": "Ban an user from the server",
+        "usage": ",ban [user]",
+        "example": ",ban @myUsername#0632"
+    },
+    "bug": {
+        "name": "bug",
+        "permissions": "`KICK_MEMBERS`",
+        "desc": "Report a bug to support server.",
+        "usage": ",bug [bug report]",
+        "example": ",bug This bot is great."
+    },
+    "dm": {
+        "name": "dm",
+        "permissions": "`KICK_MEMBERS`",
+        "desc": "Kick an user from the server.",
+        "usage": ",kick [user]",
+        "example": ",kick @myUsername#0632"
+    },
+    "eval": {
+        "name": "eval",
+        "permissions": "`OWNER`",
+        "desc": "Kick an user from the server.",
+        "usage": ",kick [user]",
+        "example": ",kick @myUsername#0632"
+    },
+    "help": {
+        "name": "help",
+        "permissions": "`SEND_MESSAGES`",
+        "desc": "Display help",
+        "usage": ",help [command]",
+        "example": ",help warn"
+    },
+    "kick": {
+        "name": "kick",
+        "permissions": "`KICK_MEMBERS`",
+        "desc": "Kick an user from the server.",
+        "usage": ",kick [user]",
+        "example": ",kick @myUsername#0632"
+    },
+    "reload": {
+        "name": "reload",
+        "permissions": "`KICK_MEMBERS`",
+        "desc": "Kick an user from the server.",
+        "usage": ",kick [user]",
+        "example": ",kick @myUsername#0632"
+    },
+    "restart": {
+        "name": "restart",
+        "permissions": "`KICK_MEMBERS`",
+        "desc": "Kick an user from the server.",
+        "usage": ",kick [user]",
+        "example": ",kick @myUsername#0632"
+    },
+    "setlang": {
+        "name": "setlang",
+        "permissions": "`KICK_MEMBERS`",
+        "desc": "Kick an user from the server.",
+        "usage": ",kick [user]",
+        "example": ",kick @myUsername#0632"
+    },
+    "stats": {
+        "name": "stats",
+        "permissions": "`KICK_MEMBERS`",
+        "desc": "Kick an user from the server.",
+        "usage": ",kick [user]",
+        "example": ",kick @myUsername#0632"
+    },
+    "user": {
+        "name": "user",
+        "permissions": "`KICK_MEMBERS`",
+        "desc": "Kick an user from the server.",
+        "usage": ",kick [user]",
+        "example": ",kick @myUsername#0632"
+    },
+    "warn": {
+        "name": "warn",
+        "permissions": "`MANAGES_MESSAGES`",
+        "desc": "Warn an user from the server",
+        "usage": ",warn [user] [reason]",
+        "example": ",warn @myUsername#0632 He did not respect the rules"
+    }
+}

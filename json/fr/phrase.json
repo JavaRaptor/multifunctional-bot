@@ -1,0 +1,125 @@
+{
+    "ban": {
+        "succes": "Vous avez banni ",
+        "title": "ban informations",
+        "error_cannot": "Vous ne pouvez pas bannir cette utilisateur.",
+        "error_server": "Cette utilisateur n'est pas sur ce serveur.",
+        "error_mention": "Veuillez mentionnez un utilisateur."
+    },
+    "bug": {
+        "succes": "Votre bug a été report sur le serveur support",
+        "deny":"Veuillez precisez le bug",
+        "title": "Bug Report",
+        "bugs": "Bug",
+        "reportIn": "Report dans",
+        "reportBy": "Report par",
+        "images": "https://images-ext-1.discordapp.net/external/nQoe_5zRdR6A5gsh2fevRbNvhoc5A2YIWP7zVdN5_NE/%3Fv%3D1/https/cdn.discordapp.com/emojis/435908220100280320.png?width=80&height=80"
+    },
+    "dm": {
+        "error_mention": "Veuillez mentionnez un utilisateur.",
+        "error_reason": "Veuillez donnez une raison.",
+        "receive": "vous a envoyé",
+        "send": "vous avez recu"
+    },
+    "help": {
+        "error": "Je ne trouve pas cette commande.",
+        "command": "Commande",
+        "group": "Groupe",
+        "desc": "Description",
+        "use": "utilisation",
+        "example": "Exemple"
+    },
+    "kick": {
+        "succes": "Vous avez expulsé ",
+        "title": "Kick informations",
+        "error_cannot": "Vous ne pouvez pas expulsé cette utilisateur.",
+        "error_server": "Cette utilisateur n'est pas sur ce serveur.",
+        "error_mention": "Veuillez mentionnez un utilisateur."
+    },
+    "reload": {
+        "arg": "Vous n'avez pas specifier de fichier.",
+        "command": "Cette commande n'existe pas.",
+        "files": "Votre fichier viens d'etre rechargé."
+    },
+    "setlang": {
+        "succes": "Vous avez changé la langue du bot en Francais.",
+        "title": "Setlang informations",
+        "footer": "lang = la langue que vous voulez configurer pour le bot.",
+        "error": "Vous n'avez pas choisi la langue du bot dans votre commande.\n(fr/en)",
+        "already":"Vous avez deja selectionne cette langue"
+    },
+    "staff": {
+        "title": "Liste Staff",
+        "add": "Vous venez de rajouter dans la liste le membre: ",
+        "remove":"Vous venez de retirer dans la liste le membre: ",
+        "error": "Vous n'avez pas choisi l'option \n1.List\n2.Add\n3.Remove"
+    },
+    "stats": {
+        "title": "Mes Stats",
+        "processor": "Utilisation du processeur",
+        "ram": "Utilisation de la ram",
+        "userTitle":"Mes utilisateurs",
+        "user":"Utilisateurs"
+    },
+    "user": {
+        "onlines": "En ligne",
+        "idles": "Inactif",
+        "dnds": "Ne Pas Déranger",
+        "oflines": "Hors Ligne",
+        "acknow": "Aucun",
+        "locale": "fr",
+        "perm": "Aucune permissions trouvé",
+        "owner": "Fondateur du serveur",
+        "statu": "Status",
+        "join": "A rejoins le",
+        "permissions": "Permissions",
+        "roles": "Fondateur du serveur",
+        "attribut": "Attributs du serveur"
+    },
+    "warn": {
+        "success": "Vous avez warn",
+        "title": "warn informations",
+        "error_cannot": "Vous ne pouvez pas warn cette utilisateur.",
+        "error_server": "Cette utilisateur n'est pas sur ce serveur.",
+        "error_mention": "Veuillez mentionnez un utilisateur.",
+        "error_reason": "Veuillez donnez une raison.",
+        "raison": "Raison",
+        "warnedBy": "Vous avez été warn par",
+        "warnedIn": "Vous avez été warn dans le serveur"
+    },
+    "messageDelete": {
+        "title": "Message Effacé",
+        "messages": "Message",
+        "users": "Utilisateurs"
+    },
+    "blAdd": {
+        "error_id": "Vous devez mettre l'identifiant de la personne à ajouter à la blacklist",
+        "success": "a bien été blacklist :skull_crossbones: !"
+    },
+    "blDel": {
+        "error_id": "Vous devez mettre l'identifiant de la personne à enlevé de la blacklist",
+        "success": "a bien été unblacklist !"
+    },
+    "blReport": {
+        "error_id": "Vous devez donner une id a report",
+        "error_proof": "Vous devez donner une preuve (https://imgur.com)",
+        "error_reason": "Vous devez donner une raison",
+        "success": "Le staff a bien été prévenu, Merci"
+    },
+    "checkid": {
+        "error_id": "Vous devez donner une id a verifier",
+        "reported": "Id Blacklist",
+        "proof": "Preuve",
+        "reason": "Raison",
+        "no":"Cette Id n'a pas été blacklist"
+    },
+    "setprefix": {
+        "error": "Vous devez mettre le prefix",
+        "prefix": "Le prefix doit etre inferieur/egal a 2 character",
+        "success": "Le prefix du bot a été changé en"
+    },
+    "level": {
+        "xp":"Le nombre d'experience que vous avez est de :",
+        "level": "Vous êtes niveau :"
+    }
+}
