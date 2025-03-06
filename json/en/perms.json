@@ -1,0 +1,14 @@
+{
+    "OWNER": "You do not have permissions. \nPermission required: ``BOT_OWNER``",
+    "ADMINISTRATOR": "You do not have permissions. \nPermission required: ``ADMINISTRATOR``",
+    "BAN_MEMBERS": "You do not have permissions. \nPermission required: ``BAN_MEMBERS``",
+    "KICK_MEMBERS": "You do not have permissions. \nPermission required: ``KICK_MEMBERS``",
+    "MANAGE_CHANNELS": "You do not have permissions. \nPermission required: ``MANAGE_CHANNELS``",
+    "MANAGE_GUILD": "You do not have permissions. \nPermission required: ``MANAGE_GUILD``",
+    "MANAGE_ROLES": "You do not have permissions. \nPermission required: ``MANAGE_ROLES``",
+    "MANAGE_WEBHOOKS": "You do not have permissions. \nPermission required: ``MANAGE_WEBHOOKS``",
+    "MANAGE_NICKNAMES": "You do not have permissions. \nPermission required: ``MANAGE_NICKNAMES``",
+    "MANAGE_MESSAGES": "You do not have permissions. \nPermission required: ``MANAGE_MESSAGES``",
+    "ADD_REACTIONS": "You do not have permissions. \nPermission required: ``ADD_REACTIONS``",
+    "USE_EXTERNAL_EMOJIS": "You do not have permissions. \nPermission required: ``USE_EXTERNAL_EMOJIS``"
+}
