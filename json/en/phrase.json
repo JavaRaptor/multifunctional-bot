@@ -1,125 +1,163 @@
 {
-    "ban": {
-        "success": "You have banned",
-        "title": "ban information",
-        "error_cannot": "You cannot ban this user.",
-        "error_server": "This user is not on this server.",
-        "error_mention": "Please mention a user."
-    },
-    "bug": {
-        "success": "Your bug has been reported on the support server",
-        "deny":"Please detail this bug",
-        "title": "Bug Report",
-        "bugs": "Bug",
-        "reportIn": "Report in",
-        "reportBy": "Report by",
-        "images": "https://images-ext-1.discordapp.net/external/nQoe_5zRdR6A5gsh2fevRbNvhoc5A2YIWP7zVdN5_NE/%3Fv%3D1/https/cdn.discordapp.com/emojis/435908220100280ightng=80"
-    },
-    "dm": {
-        "error_mention": "Please mention a user.",
-        "error_reason": "Please give a reason.",
-        "receive": "sent you",
-        "send": "you have received"
-    },
-    "help": {
-        "error": "I cannot find this command.",
-        "command": "Command",
-        "group": "Group",
-        "desc": "Description",
-        "use": "use",
-        "example": "Example"
-    },
-    "kick": {
-        "success": "You have kicked",
-        "title": "Kick information",
-        "error_cannot": "You cannot kick this user out.",
-        "error_server": "This user is not on this server.",
-        "error_mention": "Please mention a user."
-    },
-    "reload": {
-        "arg": "You did not specify a file.",
-        "command": "This command does not exist.",
-        "files": "Your file has just been loaded."
-    },
-    "setlang": {
-        "succes": "You have changed the bot language to English.",
-        "title": "Setlang information",
-        "footer": "lang = the language you want to configure for the bot.",
-        "error": "You did not choose the bot language in your command. \n (fr/en)",
-        "already":"You have already choose this language"
-    },
-    "staff": {
-        "title": "Liste Staff",
-        "add": "Vous venez de rajouter dans la liste le membre: ",
-        "remove":"Vous venez de retirer dans la liste le membre: ",
-        "error": "Vous n'avez pas choisi l'option \n1.List\n2.Add\n3.Remove"
-    },
-    "stats": {
-        "title": "My Statistique",
-        "processor": "Processor usage",
-        "ram": "Ram Usage",
-        "userTitle":"My users",
-        "user":"users"
-    },
-    "user": {
-        "onlines": "Online",
-        "idles": "Inactive",
-        "dnds": "Do Not Disturb",
-        "oflines": "Offline",
-        "acknowledge": "None",
-        "locale": "fr",
-        "perm": "No permissions found",
-        "owner": "Founder of the server",
-        "statu": "Status",
-        "join": "A rejoins le",
-        "permissions": "Founder of the server",
-        "roles": "Founder of the server",
-        "attribut": "Server attributes"
-    },
-    "warn": {
-        "success": "You have warn",
-        "title": "warn informations",
-        "error_cannot": "You cannot warn this user.",
-        "error_server": "This user is not on this server.",
-        "error_mention": "Please mention a user.",
-        "error_reason": "Please give a reason.",
-        "raison": "Reason",
-        "warnedBy": "You have been warn by",
-        "warnedIn": "You have been warn in the server"
-    },
-    "messageDelete": {
-        "title": "Delete Message",
-        "messages": "Message",
-        "users": "User"
-    },
-    "blAdd": {
-        "error_id": "You must put the id of the person to add to the blacklist",
-        "success": "has been blacklisted :skull_crossbones:!"
-    },
-    "blDel": {
-        "error_id": "You must put the id of the person to remove from the blacklist",
-        "success": "has been successfully unblacklisted!"
-    },
-    "blReport": {
-        "error_id": "You must give a report an id",
-        "error_proof": "You must provide proof (https://imgur.com)",
-        "error_reason": "You must give a reason",
-        "success": "The staff has been notified, thank you"
-    },
-    "checkid": {
-        "error_id": "You must give an id to verify",
-        "reported": "Id Blacklist",
-        "proof": "Proof",
-        "reason": "Reason",
-        "no":"This Id has not been blacklisted"
-    },
-    "setprefix": {
-        "error": "You must set the prefix",
-        "prefix": "Prefix must be less than/equal to 2 characters",
-        "success": "Bot prefix changed to"
-    },
-    "level": {
-        "xp": "The amount of experience you have is:",
-        "level": "You are at level:"
-    }
+  "ban": {
+    "success": "You have banned",
+    "title": "ban information",
+    "error_cannot": "You cannot ban this user.",
+    "error_server": "This user is not on this server.",
+    "error_mention": "Please mention a user."
+  },
+  "bug": {
+    "success": "Your bug has been reported on the support server",
+    "deny": "Please detail this bug",
+    "title": "Bug Report",
+    "bugs": "Bug",
+    "reportIn": "Report in",
+    "reportBy": "Report by",
+    "images": "https://images-ext-1.discordapp.net/external/nQoe_5zRdR6A5gsh2fevRbNvhoc5A2YIWP7zVdN5_NE/%3Fv%3D1/https/cdn.discordapp.com/emojis/435908220100280ightng=80"
+  },
+  "dm": {
+    "error_mention": "Please mention a user.",
+    "error_reason": "Please give a reason.",
+    "receive": "sent you",
+    "send": "you have received"
+  },
+  "help": {
+    "error": "I cannot find this command.",
+    "command": "Command",
+    "group": "Group",
+    "desc": "Description",
+    "use": "use",
+    "example": "Example"
+  },
+  "kick": {
+    "success": "You have kicked",
+    "title": "Kick information",
+    "error_cannot": "You cannot kick this user out.",
+    "error_server": "This user is not on this server.",
+    "error_mention": "Please mention a user."
+  },
+  "reload": {
+    "arg": "You did not specify a file.",
+    "command": "This command does not exist.",
+    "files": "Your file has just been loaded."
+  },
+  "setlang": {
+    "succes": "You have changed the bot language to English.",
+    "title": "Setlang information",
+    "footer": "lang = the language you want to configure for the bot.",
+    "error": "You did not choose the bot language in your command. \n (fr/en)",
+    "already": "You have already choose this language"
+  },
+  "staff": {
+    "title": "Liste Staff",
+    "add": "Vous venez de rajouter dans la liste le membre: ",
+    "remove": "Vous venez de retirer dans la liste le membre: ",
+    "error": "Vous n'avez pas choisi l'option \n1.List\n2.Add\n3.Remove"
+  },
+  "stats": {
+    "title": "My Statistique",
+    "processor": "Processor usage",
+    "ram": "Ram Usage",
+    "userTitle": "My users",
+    "user": "users"
+  },
+  "user": {
+    "onlines": "Online",
+    "idles": "Inactive",
+    "dnds": "Do Not Disturb",
+    "oflines": "Offline",
+    "acknowledge": "None",
+    "locale": "fr",
+    "perm": "No permissions found",
+    "owner": "Founder of the server",
+    "statu": "Status",
+    "join": "A rejoins le",
+    "permissions": "Founder of the server",
+    "roles": "Founder of the server",
+    "attribut": "Server attributes"
+  },
+  "warn": {
+    "success": "You have warn",
+    "title": "warn informations",
+    "error_cannot": "You cannot warn this user.",
+    "error_server": "This user is not on this server.",
+    "error_mention": "Please mention a user.",
+    "error_reason": "Please give a reason.",
+    "raison": "Reason",
+    "warnedBy": "You have been warn by",
+    "warnedIn": "You have been warn in the server"
+  },
+  "messageDelete": {
+    "title": "Delete Message",
+    "messages": "Message",
+    "users": "User"
+  },
+  "blAdd": {
+    "error_id": "You must put the id of the person to add to the blacklist",
+    "success": "has been blacklisted :skull_crossbones:!"
+  },
+  "blDel": {
+    "error_id": "You must put the id of the person to remove from the blacklist",
+    "success": "has been successfully unblacklisted!",
+    "noInDb":"This id is not in my data base"
+  },
+  "blReport": {
+    "error_id": "You must give a report an id",
+    "error_proof": "You must provide proof (https://imgur.com)",
+    "error_reason": "You must give a reason",
+    "success": "The staff has been notified, thank you",
+    "title": "Report",
+    "auteur": "Author",
+    "reporter": "report person",
+    "proof": "Proof",
+    "reason": "Reason"
+  },
+  "checkid": {
+    "error_id": "You must give an id to verify",
+    "reported": "Id Blacklist",
+    "proof": "Proof",
+    "reason": "Reason",
+    "no": "This Id has not been blacklisted"
+  },
+  "setprefix": {
+    "error": "You must set the prefix",
+    "prefix": "Prefix must be less than/equal to 2 characters",
+    "success": "Bot prefix changed to"
+  },
+  "level": {
+    "xp": "The amount of experience you have is:",
+    "level": "You are at level:"
+  },
+  "maintenanceCommande": {
+    "permissions": "You do not have permission to use this command.",
+    "noRaison": "Please provide a reason to put the bot in maintenance.",
+    "title": "Bot in maintenance",
+    "desc": "The bot is now under maintenance.\n**Reason:**",
+    "footer": "Only staff members can use commands during this period."
+  },
+  "endMaintenanceCommande": {
+    "permissions": "You do not have permission to use this command.",
+    "retour": "The bot is now back online!"
+  },
+  "messageEvent": {
+    "prefixMessage": "My prefix is",
+    "maintenanceMessage": "The bot is currently under maintenance. Only staff members can use the commands."
+  },
+  "start": {
+    "error1": "There was an error accessing the profile data.",
+    "hasAccount": "You already have a character. Start the adventure with !profile or check your inventory !",
+    "error2": "There was an error in saving your character's data.",
+    "startAdventure": "your adventure begins!",
+    "desc": "Welcome, adventurer! You created your character and you are now ready to explore the world. Here is your initial information:",
+    "niveau": "Level",
+    "requiredXp": "Required XP",
+    "gold": "Gold",
+    "force": "Strength",
+    "agilite": "Agility",
+    "intelligence": "Intelligence",
+    "charisme": "Charism",
+    "footer": "Good luck in your adventure!",
+    "error3": "An error occurred while creating your profile. Please try again",
+    "error4": "An error occurred sending your profile."
+  }
 }

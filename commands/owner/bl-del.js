@@ -14,17 +14,20 @@ module.exports.run = (client, message, args) => {
     let owner;
     let error_id;
     let success;
+    let noInDb;
 
     if (lang[id].lang === "fr")
     {
         owner = FRperm.OWNER
         error_id = FRphrase.blDel.error_id
         success = FRphrase.blDel.success
+        noInDb = FRphrase.blDel.noInDb
     } else if (lang[id].lang === "en")
     {
         owner = ENperm.OWNER
         error_id = ENphrase.blDel.error_id
         success = ENphrase.blDel.success
+        noInDb = FRphrase.blDel.noInDb
     }
 
     let Admin = [`544853657896615937`]
@@ -42,10 +45,10 @@ module.exports.run = (client, message, args) => {
             fs.writeFileSync('./json/blacklist.json', JSON.stringify(blacklist));
             message.channel.send(`<@${args[0]}>` + " " + success)
         } else {
-            message.channel.send("Il n'y a as cette id dans ma base de donné")
+            message.channel.send(noInDb)
         }
       } else {
-        message.channel.send("Il n'y a as cette id dans ma base de donné")
+        message.channel.send(noInDb)
       }
 
     

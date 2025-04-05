@@ -1,7 +1,11 @@
 const Discord = require("discord.js");
 const fs = require("fs")
-const Enmap = require("enmap");
-const db = new Enmap({ name:"xp1" });
+
+const lang = require("../json/options.json")
+const FRperm = require("../json/fr/perms.json");
+const FRphrase = require("../json/fr/phrase.json")
+const ENperm = require("../json/en/perms.json");
+const ENphrase = require("../json/en/phrase.json")
 
 module.exports = async (client, message) => {
   if (message.author.bot) return;
@@ -42,6 +46,31 @@ module.exports = async (client, message) => {
   }
 
   fs.writeFileSync('./json/level.json', JSON.stringify(data));
+
+let id = message.guild.id
+
+    let prefixMessage;
+    let maintenanceMessage;
+    
+    if (lang[id].lang === "fr")
+    {
+        prefixMessage = FRphrase.messageEvent.prefixMessage
+        maintenanceMessage = FRphrase.messageEvent.maintenanceMessage
+    } else if (lang[id].lang === "en")
+    {
+        prefixMessage = ENphrase.messageEvent.prefixMessage
+        maintenanceMessage = ENphrase.messageEvent.maintenanceMessage
+    }
+
+  let maintenanceData = JSON.parse(fs.readFileSync("./json/staff.json", "utf8"));
+
+  // Vérifier si le bot est en maintenance
+  if (maintenanceData.maintenance) {
+    // Si le bot est en maintenance et que l'utilisateur n'est pas un membre du staff
+    if (!maintenanceData.staff.includes(message.author.id)) {
+      return message.channel.send(maintenanceMessage);
+    }
+  }
   
   let prefix = prefixes[message.guild.id].prefixes
   let messageArray = message.content.split(" ");
@@ -55,6 +84,6 @@ module.exports = async (client, message) => {
   client.user.setActivity(`${client.guilds.cache.size} Servers`)
 
   if(message.content.match(new RegExp(`^<@!?${client.user.id}>( |)$`))){
-    message.channel.send(`Mon prefix est \`${prefix}\``)
+    message.channel.send(`${prefixMessage} \`${prefix}\``)
   }
 }

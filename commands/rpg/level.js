@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const Canvas = require("canvas");
 const fs = require("fs")
 
 const lang = require("../../json/options.json")

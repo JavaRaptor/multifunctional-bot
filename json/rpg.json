@@ -1,0 +1,21 @@
+{
+  "544853657896615937": {
+    "level": 2,
+    "xp": 10,
+    "requiredxp": 150,
+    "gold": 138,
+    "inventory": {
+      "HealthPotions": 7
+    },
+    "stats": {
+      "hp": 9530,
+      "mana": 10,
+      "force": 2,
+      "agilite": 2,
+      "intelligence": 2,
+      "charisme": 2
+    },
+    "quest": null,
+    "equipped": null
+  }
+}

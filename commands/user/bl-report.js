@@ -15,6 +15,11 @@ module.exports.run = (client, message, args) => {
     let error_proof;
     let error_reason
     let success;
+    let title;
+    let auteur;
+    let reporter;
+    let proof;
+    let reason;
 
     if (lang[id].lang === "fr")
     {
@@ -22,12 +27,22 @@ module.exports.run = (client, message, args) => {
         error_proof = FRphrase.blReport.error_proof
         error_reason = FRphrase.blReport.error_reason
         success = FRphrase.blReport.success
+        title = FRphrase.blReport.title
+        auteur = FRphrase.blReport.auteur
+        reporter = FRphrase.blReport.reporter
+        proof = FRphrase.blReport.proof
+        reason = FRphrase.blReport.reason
     } else if (lang[id].lang === "en")
     {
         error_id = ENphrase.blReport.error_id
         error_proof = ENphrase.blReport.error_proof
         error_reason = ENphrase.blReport.error_reason
         success = ENphrase.blReport.success
+        title = ENphrase.blReport.title
+        auteur = ENphrase.blReport.auteur
+        reporter = ENphrase.blReport.reporter
+        proof = ENphrase.blReport.proof
+        reason = ENphrase.blReport.reason
     }
 
     if(!args[0]) return message.channel.send(error_id)
@@ -36,11 +51,11 @@ module.exports.run = (client, message, args) => {
   
     var embed = new Discord.MessageEmbed()
     .setColor("RED")
-    .setTitle("Report")
-    .addField("Auteur", message.author.username)
-    .addField("Personne report", `<@${args[0]}>`)
-    .addField("Preuve", args[1])
-    .addField("Raison", args.slice(2).join(" "))
+    .setTitle(title)
+    .addField(auteur, message.author.username)
+    .addField(reporter, `<@${args[0]}>`)
+    .addField(proof, args[1])
+    .addField(reason, args.slice(2).join(" "))
 
     message.channel.send(success)
 
