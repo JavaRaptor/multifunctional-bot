@@ -5,9 +5,10 @@ const {
   Collection,
 } = require("discord.js");
 const fs = require("fs");
-const config = require("./config.json");
 const client = new Client();
 const { QuickDB } = require("quick.db");
+require('dotenv').config();
+const discordToken = process.env.TOKEN;
 
 const lang = require("./json/options.json")
 const FRperm = require("./json/fr/perms.json");
@@ -16,7 +17,7 @@ const ENperm = require("./json/en/perms.json");
 const ENphrase = require("./json/en/phrase.json")
 
 client.commands = new Collection();
-client.login(config.token);
+client.login(process.env.DISCORD_TOKEN);
 
 //events
 fs.readdir("./events/", (err, files) => {
