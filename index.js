@@ -6,7 +6,6 @@ const {
 } = require("discord.js");
 const fs = require("fs");
 const client = new Client();
-const { QuickDB } = require("quick.db");
 require('dotenv').config();
 const discordToken = process.env.TOKEN;
 
