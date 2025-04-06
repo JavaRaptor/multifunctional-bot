@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-
+const config = require("../../config.json")
 const lang = require("../../json/options.json")
 const FRperm = require("../../json/fr/perms.json");
 const FRphrase = require("../../json/fr/phrase.json")
@@ -59,6 +59,6 @@ module.exports.run = (client, message, args) => {
 
     message.channel.send(success)
 
-    client.channels.cache.get('1097895182273364088').send(embed)
+    client.channels.cache.get(config.reportChannel).send(embed)
 
 }

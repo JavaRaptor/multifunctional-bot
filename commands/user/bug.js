@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const config = require("../../config.json")
 const lang = require("../../json/options.json")
 const FRperm = require("../../json/fr/perms.json");
 const FRphrase = require("../../json/fr/phrase.json")
@@ -41,7 +42,7 @@ module.exports.run = async (client, message, args) =>
     let bug = args.join(" ").slice(0);
     let user = message.author.username;
     let guild = message.guild.name;
-    let channel = client.channels.cache.get("761971473581604864")
+    let channel = client.channels.cache.get(config.bugChannel)
     let embed = new Discord.MessageEmbed()
 
     if (!bug) return message.reply(deny);

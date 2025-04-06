@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const config = require("../config.json")
 module.exports = async (client, guild) => {
   const embed = new Discord.MessageEmbed()
     .setColor("#008000")
@@ -9,17 +10,19 @@ module.exports = async (client, guild) => {
     .addField("Serveurs", client.guilds.cache.size)
     .addField(`Nitro Level`, guild.premiumTier)
     .addField(`Nitro boost`, guild.premiumSubscriptionCount);
-  //let channel = client.channels.cache.get("875508494474829874")
-  //channel.send(embed)
+  let channel = client.channels.cache.get(config.guildCreateChannel)
+  channel.send(embed)
 
   const fs = require('fs');
   const data = require('../json/options.json');
   data[guild.id] = {
-    prefixes:"!",
-    lang : "fr",
-    logs: 0,
-    welc: 0,
-    blacklist: false
-  }
+            prefixes: "!",
+            lang: "fr",
+            logsID: 0,
+            welcID: 0,
+            blacklist: false,
+            welcome: false,
+            log: false
+        };
   fs.writeFileSync('./json/options.json', JSON.stringify(data));
 }
