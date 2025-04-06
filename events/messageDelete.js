@@ -1,46 +1,41 @@
+const fs = require("fs");
 const Discord = require("discord.js");
-const fs = require("fs")
-const lang = require("../json/options.json")
-const FRperm = require("../json/fr/perms.json");
+const lang = require("../json/options.json");
 const FRphrase = require("../json/fr/phrase.json")
-const ENperm = require("../json/en/perms.json");
 const ENphrase = require("../json/en/phrase.json")
 module.exports = async (client, message) => {
-  let id = message.guild.id
-  
-  let title;
-  let messages;
-  let users;
-  
-  if (lang[id].lang === "fr") {
-    title = FRphrase.messageDelete.title
-    messages = FRphrase.messageDelete.messages
-    users = FRphrase.messageDelete.users
-  } else if (lang[id].lang === "en") {
-    title = ENphrase.messageDelete.title
-    messages = ENphrase.messageDelete.messages
-    users = ENphrase.messageDelete.users
-  }
+    // Vérifie que c'est dans un serveur et pas un bot
+    if (!message.guild || message.author?.bot) return;
 
-  const logs = message.guild.channels.cache.find(channel => channel.name === "logs");
+    // Charge les options
+    const options = JSON.parse(fs.readFileSync("./json/options.json", "utf8"));
+    const guildID = message.guild.id;
 
-  if (message.guild.me.hasPermission('MANAGE_CHANNELS') && !logs) {
-    await message.guild.channels.create('logs', {
-      type: 'text'
-    });
-  }
-  if (!logs) {
-    return console.log('The logs channel does not exist and cannot be created');
-  }
-  const entry = await message.guild.fetchAuditLogs({
-    type: 'MESSAGE_DELETE'
-  }).then(audit => audit.entries.first())
-  let user;
+    // Vérifie que les logs sont activés
+    if (!options[guildID] || options[guildID].log !== true) return;
 
-  let embed = new Discord.MessageEmbed()
-    embed.setTitle(title)
-    embed.setColor("#00ff00")
-    embed.addField(users, message.author.username)
-    embed.addField(messages, message);
-  logs.send(embed)
-}
+    // Récupère le salon de logs
+    const logChannel = message.guild.channels.cache.get(options[guildID].logsID);
+    if (!logChannel) return console.log(`[LOG] Salon introuvable : ${options[guildID].logsID}`);
+
+    // Vérifie si le message est lisible (dans certains cas il ne l'est pas)
+    const content = message.content || "*Message vide ou embed non récupérable*";
+    const author = message.author ? `${message.author.tag} (${message.author.id})` : "*Auteur inconnu*";
+
+    let title;
+    let messages;
+    let users;
+    let channel;
+    let messageID;
+
+    const embed = new Discord.MessageEmbed()
+        .setTitle(title)
+        .setColor("#ff0000")
+        .addField(users, author, true)
+        .addField(messages, content.length > 1024 ? content.substring(0, 1021) + "..." : content)
+        .addField(channel, `${message.channel} (${message.channel.id})`, true)
+        .setFooter(`${messsageID} : ${message.id}`)
+        .setTimestamp();
+
+    logChannel.send(embed).catch(err => console.error("Erreur d'envoi du log :", err));
+};

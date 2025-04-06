@@ -73,7 +73,7 @@
     "statu": "Status",
     "join": "A rejoins le",
     "permissions": "Permissions",
-    "roles": "Fondateur du serveur",
+    "roles": "Roles de l'utilisateur",
     "attribut": "Attributs du serveur"
   },
   "warn": {
@@ -88,9 +88,11 @@
     "warnedIn": "Vous avez été warn dans le serveur"
   },
   "messageDelete": {
-    "title": "Message Effacé",
-    "messages": "Message",
-    "users": "Utilisateurs"
+    "title": "🗑️ Message supprimé",
+    "messages": "💬 Contenu",
+    "users": "👤 Auteur",
+    "channel": "📍 Salon",
+    "messageID": "ID du message"
   },
   "blAdd": {
     "error_id": "Vous devez mettre l'identifiant de la personne à ajouter à la blacklist",
@@ -101,16 +103,16 @@
     "success": "a bien été unblacklist !",
     "noInDb": "Il n'y a pas cette id dans ma base de donné"
   },
-  "blReport": { 
+  "blReport": {
     "error_id": "Vous devez donner une id a report",
     "error_proof": "Vous devez donner une preuve (https://imgur.com)",
     "error_reason": "Vous devez donner une raison",
     "success": "Le staff a bien été prévenu, Merci",
-    "title":"Report",
-    "auteur":"Auteur",
-    "reporter":"Personne report",
-    "proof":"Preuve",
-    "reason":"Raison"
+    "title": "Report",
+    "auteur": "Auteur",
+    "reporter": "Personne report",
+    "proof": "Preuve",
+    "reason": "Raison"
   },
   "checkid": {
     "error_id": "Vous devez donner une id a verifier",
@@ -143,7 +145,7 @@
     "prefixMessage": "Mon prefix est",
     "maintenanceMessage": "Le bot est actuellement en maintenance. Seuls les membres du staff peuvent utiliser les commandes."
   },
-  "start":{
+  "start": {
     "error1": "Il y a eu une erreur en accédant aux données du profil.",
     "hasAccount": "Tu as déjà un personnage. Commence l'aventure avec !profile ou vérifie ton inventaire !",
     "error2": "Il y a eu une erreur en enregistrant les données de ton personnage.",
@@ -155,9 +157,25 @@
     "force": "Force",
     "agilite": "Agilité",
     "intelligence": "Intelligence",
-    "charisme":"Charisme",
-    "footer":"Bonne chance dans ton aventure !",
-    "error3":"Une erreur s'est produite lors de la création de ton profil. Veuillez réessayer.",
-    "error4":"Une erreur s'est produite en envoyant ton profil."
+    "charisme": "Charisme",
+    "footer": "Bonne chance dans ton aventure !",
+    "error3": "Une erreur s'est produite lors de la création de ton profil. Veuillez réessayer.",
+    "error4": "Une erreur s'est produite en envoyant ton profil."
+  },
+  "setwelcome": {
+    "error1": "Utilisation : `!setwelcome on` ou `!setwelcome #salon`",
+    "on": "✅ Le système de bienvenue est **activé**.",
+    "error2": "Veuillez d'abord définir un salon valide.",
+    "off": "❌ Le système de bienvenue est **désactivé**.",
+    "set": "✅ Le salon de bienvenue est maintenant",
+    "error3": "Veuillez mentionner un salon valide ou utiliser `on`."
+  },
+  "setlog": {
+    "error1": "Utilisation : `!setlog on` ou `!setlog #salon`",
+    "on": "✅ Le système de log est **activé**.",
+    "error2": "Veuillez d'abord définir un salon valide.",
+    "off": "❌ Le système de log est **désactivé**.",
+    "set": "✅ Le salon de log est maintenant",
+    "error3": "Veuillez mentionner un salon valide ou utiliser `on`."
   }
 }

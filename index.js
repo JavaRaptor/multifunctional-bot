@@ -78,6 +78,18 @@ fs.readdir("./commands/user/", (err, files) => {
   });
 });
 
+//commands automation
+fs.readdir("./commands/automation/", (err, files) => {
+  if (err) return console.error(err);
+  files.forEach(file => {
+    if (!file.endsWith(".js")) return;
+    let props = require(`./commands/automation/${file}`);
+    let commandName = file.split(".")[0];
+    console.log(`[Commande | automation]${commandName}`);
+    client.commands.set(commandName, props);
+  });
+});
+
 //JSON CONFIG
 fs.readdir("./json/", (err, files) => {
   if (err) return console.error(err);

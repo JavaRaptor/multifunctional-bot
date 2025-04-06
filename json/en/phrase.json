@@ -72,7 +72,7 @@
     "owner": "Founder of the server",
     "statu": "Status",
     "join": "A rejoins le",
-    "permissions": "Founder of the server",
+    "permissions": "Roles of the user",
     "roles": "Founder of the server",
     "attribut": "Server attributes"
   },
@@ -88,9 +88,11 @@
     "warnedIn": "You have been warn in the server"
   },
   "messageDelete": {
-    "title": "Delete Message",
-    "messages": "Message",
-    "users": "User"
+    "title": "🗑️ Deleted Message",
+    "messages": "💬 Content",
+    "users": "👤 Author",
+    "channel": "📍 Channel",
+    "messageID": "Message ID"
   },
   "blAdd": {
     "error_id": "You must put the id of the person to add to the blacklist",
@@ -99,7 +101,7 @@
   "blDel": {
     "error_id": "You must put the id of the person to remove from the blacklist",
     "success": "has been successfully unblacklisted!",
-    "noInDb":"This id is not in my data base"
+    "noInDb": "This id is not in my data base"
   },
   "blReport": {
     "error_id": "You must give a report an id",
@@ -159,5 +161,21 @@
     "footer": "Good luck in your adventure!",
     "error3": "An error occurred while creating your profile. Please try again",
     "error4": "An error occurred sending your profile."
+  },
+  "setwelcome": {
+    "error1": "Utilisation : `!setwelcome on` or `!setwelcome #channel`",
+    "on": "✅ The welcome system is **activated**.",
+    "error2": "Please first define a valid channel.",
+    "off": "❌ The welcome system is **disabled**.",
+    "set": "✅ The welcome channel is now",
+    "error3": "Please mention a valid channel or use `on`."
+  },
+  "setlog": {
+    "error1": "Utilisation : `!setlog on` or `!setlog #channel`",
+    "on": "✅ The log system is **activated**.",
+    "error2": "Please first define a valid channel.",
+    "off": "❌ The log system is **disabled**.",
+    "set": "✅ The log channel is now",
+    "error3": "Please mention a valid channel or use `on`."
   }
 }

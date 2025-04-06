@@ -1,5 +1,8 @@
 {
-    "supportID":"1123146732595851335",
+    "serverSupportID":"1358394357681619052",
     "botID":"1358165350948143366",
-    "ownerID":"544853657896615937"
+    "ownerID":"544853657896615937",
+    "suggestChannel":"",
+    "bugChannel":"",
+    "reportChannel":""
 }

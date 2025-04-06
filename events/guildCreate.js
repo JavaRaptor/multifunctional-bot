@@ -16,7 +16,10 @@ module.exports = async (client, guild) => {
   const data = require('../json/options.json');
   data[guild.id] = {
     prefixes:"!",
-    lang : "fr"
+    lang : "fr",
+    logs: 0,
+    welc: 0,
+    blacklist: false
   }
   fs.writeFileSync('./json/options.json', JSON.stringify(data));
 }
