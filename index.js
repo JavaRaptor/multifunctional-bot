@@ -17,7 +17,7 @@ const ENperm = require("./json/en/perms.json");
 const ENphrase = require("./json/en/phrase.json")
 
 client.commands = new Collection();
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.TOKEN);
 
 //events
 fs.readdir("./events/", (err, files) => {
